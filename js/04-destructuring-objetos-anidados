@@ -1,0 +1,33 @@
+const persona = {
+    nombre: "David",
+    apellido: "Cornejo",
+    edad: 30,
+    ciudad: "Arica",
+    saludo: function() {
+        console.log("Hola soy David")
+    },
+    ocupacion: {
+        titulo: "Ingeniero informatico",
+        aniosExp: 2,
+        especialidad: {
+            title: "Desarrollador",
+            estudios: "Postgrado",
+            ejecucion: function() {
+                console.log("Es un buen ingeniero")
+            }
+        }
+    }
+}
+
+const {apellido} = persona
+console.log(apellido)
+
+const {ocupacion: {titulo}} = persona
+console.log(titulo)
+
+const {ocupacion: {especialidad: {estudios}}} = persona
+console.log(estudios)
+
+// Funciona pero no es lo comun
+const {title} = persona.ocupacion.especialidad
+console.log(title)
