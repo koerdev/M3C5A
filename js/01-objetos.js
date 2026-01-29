@@ -18,3 +18,14 @@ console.log(persona.nombre)
 console.log(persona.edad)
 console.log(persona.email)
 console.log(persona.saludar())
+
+
+const producto = {
+    nombre: "Teclado inalambrico",
+    price: 20,
+    stock: 5
+}
+
+// Notacion de corchetes
+console.log("notacion de puntos ", producto.nombre)
+console.log("notacion de corchetes ", producto['nombre'])
